@@ -1,1 +1,1 @@
-# COMP2041
+# Powerful Scripting Language
