@@ -1,0 +1,12 @@
+15/10/2016  15:45   17:00   getting started and insert an image
+16/10/2016  12:00	14:15   import bootstrap and working on subset 0
+18/10/2016  21:50   24:00   finish subset 0
+20/10/2016	15:00	17:00	import mates images
+22/10/2016  20:00   22:00   import links to other pages
+23/10/2016  20:00   22:30   finish searching task
+25/10/2016	10:00	13:00
+			15:00	18:00	finish posting and commenting
+26/10/2016	19:00	22:00	posting works now
+28/10/2016  12:00   14:00   searching post working now
+29/10/2016  10:00   14:00   finish log in (hidden variable didnt work so ended up with writing to files)
+30/10/2016  9:00    11:00   clean up and add some more comments 

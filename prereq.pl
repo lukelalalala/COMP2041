@@ -1,6 +1,7 @@
 #!/usr/bin/perl -w
 # A Perl script which prints courses which can be used to meet prerequisite requirements for a UNSW course
 # For example, typing comp2041 in command line will output COMP1917 and COMP1921
+
 $year = 2017;
 $url_base = "http://www.handbook.unsw.edu.au/";
 $url_ugrad = "$url_base/undergraduate/courses/$year";
