@@ -1,5 +1,9 @@
-Here r some powerful scripts
+Here are some powerful scripts
 ===================
+
+pageSpeedAutomation.py
+-------------
+A python script that crawls results from google's page speed tools
 
 onlineCourses.pl
 -------------
