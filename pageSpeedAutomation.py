@@ -1,9 +1,6 @@
 from selenium import webdriver
-from selenium.webdriver.common.by import By
-from selenium.webdriver.support.ui import WebDriverWait
-from selenium.webdriver.support import expected_conditions as EC
-import time
 
+# add list of pages
 pages = []
 
 # chrome driver is needed for automated testing
@@ -14,5 +11,7 @@ for page in pages:
     browser.get(url)
 
     print(page + " mobile " + str(browser.find_element_by_xpath("//*[@id='page-speed-insights']/div[2]/div/div[2]/div[1]/div[3]/div[2]/div[2]/p[3]/span").text))
+    
+    # go to desktop page
     browser.find_element_by_id(':l').click()
     print(page + " computer " + str(browser.find_element_by_xpath("//*[@id='page-speed-insights']/div[2]/div/div[2]/div[2]/div[3]/div[2]/div[2]/p[3]/span").text))
