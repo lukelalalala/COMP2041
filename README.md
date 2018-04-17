@@ -1,9 +1,13 @@
 Here are some powerful scripts
 ===================
 
+sslCheckAutomation.py
+-------------
+A python script that scrapes results from https://www.jitbit.com/sslcheck/
+
 pageSpeedAutomation.py
 -------------
-A python script that crawls results from google's page speed tools
+A python script that scrapes scores from google's page speed tools
 
 onlineCourses.pl
 -------------
