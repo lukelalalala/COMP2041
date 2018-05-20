@@ -1,5 +1,8 @@
 Here are some powerful scripts
 ===================
+wordPressBruteForce.py
+-------------
+Brute force login attack wordpress website (testing and ethical hacking only)
 
 sslCheckAutomation.py
 -------------
