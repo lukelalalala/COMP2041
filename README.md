@@ -12,6 +12,10 @@ pageSpeedAutomation.py
 -------------
 A python script that scrapes scores from google's page speed tools
 
+emailSpam.py
+-------------
+An email spam script written in Python
+
 onlineCourses.pl
 -------------
 A Perl script that lists courses that are offered online and fully online specifically at UNSW 
