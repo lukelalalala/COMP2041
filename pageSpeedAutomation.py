@@ -1,11 +1,15 @@
 from selenium import webdriver
 import csv
 
+# Chrome will be started in headless mode
+options = webdriver.ChromeOptions()
+options.add_argument('--headless')
+
 # add list of pages
 pages = []
 
 # chrome driver is needed for automated testing
-browser = webdriver.Chrome(executable_path="/Users/luke.yuan/Desktop/chromedriver")
+browser = webdriver.Chrome(executable_path="C:/Users/luke.yuan/Desktop/chromedriver",chrome_options=options)
 f = open('speedTestReport.csv','w+')
 f.write('site,mobile,computer\n')
 
