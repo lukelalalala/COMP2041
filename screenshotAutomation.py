@@ -25,17 +25,20 @@ readResult = service.spreadsheets().values().get(spreadsheetId=SPREADSHEET_ID, r
 options = webdriver.ChromeOptions()
 options.add_argument('--headless')
 browser = webdriver.Chrome(executable_path="<INSERT CHROMEDRIVER PATH HERE>",chrome_options=options)
-browser.set_window_size(1920, 1080)
+scrollbarWidth = 17
+targetWidth = 1920
+targetHeight = 1080
+browser.set_window_size(targetWidth + scrollbarWidth, targetHeight)
 
 # create screenshots directory if not exists
 os.makedirs("/screenshots", exist_ok=True)
 
 for page in readResult.get('values')[0]:
+    print(page)
     browser.get(page)
-    if page.startswith("https://"):
-        filename = page[8:]
-    browser.save_screenshot('screenshots/'+filename+'.png')
 
-    # crop the image to hide the scrollbar
-    screenshot = Image.open('screenshots/'+filename+'.png')
-    screenshot.crop((0, 0, 1895, 1080)).save('screenshots/'+filename+'.png')
+    filename = 'screenshots/{domain}.png'.format(domain=page[len('https://'):])
+    browser.save_screenshot(filename)
+    
+    # crop the image to hide scroll bar
+    Image.open(filename).crop((0, 0, targetWidth, targetHeight)).save(filename)
