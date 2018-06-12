@@ -12,6 +12,10 @@ pageSpeedAutomation.py
 -------------
 A python script that scrapes scores from google's page speed tools
 
+screenshotAutomation.py
+-------------
+A python script that takes automated screenshots of webpages listed in a google sheet
+
 enrolmentReminder.py
 -------------
 A python script that sends email reminder when enrolment for a UNSW course is available
