@@ -9,6 +9,7 @@ browser = webdriver.Chrome(executable_path="/Users/luke.yuan/Desktop/chromedrive
 url = "https://www.jitbit.com/sslcheck/"
 browser.get(url)
 browser.find_element_by_xpath("//*[@id='tweetForm']/div[2]/a").click()
+pages = []
 for page in pages:
     # add https string at the beginning
     if not re.match(r'^https://(.*)', page, re.M):
