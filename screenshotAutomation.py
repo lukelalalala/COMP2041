@@ -14,7 +14,7 @@ if not creds or creds.invalid:
 	creds = tools.run_flow(flow, store)
 service = build('sheets', 'v4', http=creds.authorize(Http()))
 # spread sheet id is the value between the "/d/" and the "/edit" in the URL
-SPREADSHEET_ID = '11BufuJbbUsgmauYOIsIUVECRMFz4qDine8ZYW5h1st8'
+SPREADSHEET_ID = '<INSERT SPREADSHEETID>'
 
 # read domains
 domainsRange = 'domains'
